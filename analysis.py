@@ -1,6 +1,5 @@
 """
 Mental Health in Tech - Unsupervised Learning Case Study
-DLBDSMLUSL01 - IU International University
 """
 
 import pandas as pd
@@ -53,7 +52,7 @@ axes[0].set_title('Age Distribution of Respondents')
 axes[0].axvline(df[age_col].median(), color='red', linestyle='--', label=f'Median: {df[age_col].median():.0f}')
 axes[0].legend()
 
-# standardize the messy gender field
+# standardize gender field
 gender_col = 'Q56'
 def clean_gender(val):
     if pd.isnull(val):
